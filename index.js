@@ -22,7 +22,6 @@ Object.keys(descriptors).forEach(name => {
           });
           return method.apply(this, args);
         }).catch(error => {
-          console.error(error);
           throw error;
         });
       }
